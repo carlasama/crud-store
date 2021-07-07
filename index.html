@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="dp.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(242, 215, 213);
+        }
+
+        .content{
+            width: 50%;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 30px;
+            border: transparent;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin-top: 150px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+        .content label{
+            margin-right: 250px;
+
+        }
+
+        input[type="text"] {
+            font-family: "Lucida Console", "Courier New", monospace;
+            border: 1px solid rgb(199, 198, 198);
+            border-radius: 10px;
+            margin: 10px auto;
+            padding: 3px 150px 6px 5px;
+        }
+
+        input[type="password"] {
+            font-family: "Lucida Console", "Courier New", monospace;
+            border: 1px solid rgb(199, 198, 198);
+            border-radius: 10px;
+            margin: 10px auto;
+            padding: 3px 150px 6px 5px;
+        }
+
+        input[type="submit"] {
+            border-collapse: collapse;
+            border: transparent;
+            border-radius: 15px;
+            font-family: 'Roboto', sans-serif;
+            color: black;
+            margin: 15px auto;
+            padding: 5px 50px 5px 50px;
+            background-color: #F5B7B1;
+            transition: 0.5s;
+        }
+        input[type="submit"]:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(23, 32, 42);
+        }
+        .regis{
+            text-decoration: none;
+            font-size: 13px;
+            border-collapse: collapse;
+            border: transparent;
+            border-radius: 15px;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            margin: 15px;
+            padding: 5px 50px 5px 50px;
+            background-color: rgb(23, 32, 42);
+            transition: 0.5s;
+        }
+        .regis:hover{
+            text-decoration: none;
+            color: black;
+            background-color: #F1948A;
+        }
+        .footer{
+            position:absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 100%;
+            height: 50px;
+            color: white;
+            font-family: "Lucida Console", "Courier New", monospace;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: rgb(23, 32, 42);
+        }
+        .footer p{
+            text-align: right;
+            margin-right: 50px;
+            position:relative;
+        }
+    </style>
+</head>
+<body>
+    <div class = "content">
+        <h1>Sign In</h1>
+        <form action="login.php" method="POST">
+            <label for="username">Username: </label>
+            <br>
+            <input type="text" name="username" placeholder="Nome de usuário" required>
+            <br>
+            <label for="pass">Password: </label>
+            <br>
+            <input type="password" name="password" placeholder="Sua senha" required>
+            <br>
+            <input type="submit" value="Entrar">
+        </form>
+        <a href="main/member.html" class="regis">Registrar</a>
+    </div>
+
+</body>
+</html>
